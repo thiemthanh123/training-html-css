@@ -1,0 +1,16 @@
+footer {    
+    clear: both;
+    float: left;
+    width: 100%;
+    margin: 0 auto 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #888;
+    font-size: 12px;
+    background: #f7f7f7;
+}
+.thiem {
+    display: flex;
+}
