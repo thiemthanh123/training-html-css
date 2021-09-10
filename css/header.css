@@ -1,8 +1,3 @@
-#zing-header.fixed {
-    position: fixed !important;
-    top: 0 !important;
-}
-
 #zing-header {
     position: fixed;
     top: 0;
@@ -19,7 +14,90 @@
     -moz-transition: transform .2s, -moz-transform .2s;
     transition: transform .2s;
     transition: transform .2s, -webkit-transform .2s, -moz-transform .2s, -o-transform .2s;
+}
+
+header {
     display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    background: transparent;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+#zing-header .logo {
+    width: 100px;
+    height: 100%;
+    padding: 5px 0;
+    position: absolute;
+    top: 1px;
+    left: 0;
+}
+
+#zing-header .logo a {
+    display: block;
+    width: 94%;
+    height: 29px;
+    text-indent: -9999px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(https://static-znews.zadn.vn/images/logo-zing-home.svg);
+    position: relative;
+}
+
+#zing-header .category-menu {
+    float: left;
+    vertical-align: middle;
+    height: 52px;
+    line-height: 52px;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+#zing-header .category-menu>ul {
+    float: left;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding-right: 0;
+    position: relative;
+}
+
+ul {
+    list-style: none;
+}
+
+#zing-header>.page-wrapper .category-menu li.parent {
+    position: relative;
+}
+#zing-header .category-menu li {
+    float: left;
+    margin-right: 15px;
+    font-size: 14px;
+}
+
+#zing-header .category-menu li.parent a {
+    display: block;
+}
+
+#zing-header .category-menu li>a {
+    color: #444444;
+}
+
+li, header, div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
 }
 
 a {
@@ -33,8 +111,8 @@ a {
     cursor: pointer;
 }
 
-#zing-header .category-menu li>a {
-    color: #444444;
+#zing-header .category-menu li:last-child {
+    margin-right: 0;
 }
 
 #zing-header .category-menu .more {
@@ -42,4 +120,82 @@ a {
     height: 52px;
     cursor: pointer;
     position: relative;
+}
+
+#zing-header .category-menu .more .dot {
+    width: 4px;
+    height: 4px;
+    background-color: #444444;
+    border-radius: 50%;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -2px;
+    margin-top: -2px;
+}
+
+#zing-header .category-menu .more .dot:nth-child(n+2) {
+    display: none;
+}
+
+#zing-header .toolbox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 52px;
+    padding-left: 10px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    align-items: center;
+}
+
+#zing-header .toolbox .searchform-wrap {
+    z-index: 99;
+}
+
+#zing-header .toolbox .searchform-wrap #searchbox {
+    position: relative;
+    width: inherit;
+    height: inherit;
+    padding: 0;
+}
+
+#zing-header .toolbox .searchform-wrap #searchbox input {
+    position: absolute;
+    width: 150px;
+    height: 34px;
+    right: -1px;
+    top: -5px;
+    border-radius: 6px;
+    background-color: #444444;
+    padding-left: 15px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#zing-header .toolbox .searchform-wrap button {
+    position: relative;
+    top: 0;
+    right: inherit;
+    width: inherit;
+    height: inherit;
+    cursor: pointer;
+    outline: none;
 }
